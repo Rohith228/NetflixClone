@@ -1,4 +1,6 @@
 .login-container {
+  background-image: url('https://res.cloudinary.com/dsiyffj0o/image/upload/v1670748736/netfilx_1_eatqpj.png');
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,6 +8,12 @@
   min-height: 100vh;
   background-color: #131313;
   margin: auto;
+}
+
+.heading-login {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'HK Grotesk';
 }
 
 @media screen and (min-width: 768px) {
@@ -29,11 +37,7 @@
 }
 
 .website-logo {
-  width: 105px;
-  align-self: flex-start;
-  /* margin-top: 100px; */
-  margin-bottom: 100px;
-  margin-left: 30px;
+  font-size: 15px;
 }
 
 .heading-login {
@@ -46,7 +50,7 @@
 }
 @media screen and (min-width: 768px) {
   .heading-login {
-    font-family: 'HK Grotesk';
+    font-family: 'Roboto';
     align-self: center;
   }
 }

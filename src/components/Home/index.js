@@ -7,6 +7,7 @@ import Originals from '../Originals'
 
 import Header from '../Header'
 import Footer from '../Footer'
+
 import './index.css'
 
 const apiStatusConstants = {
@@ -48,10 +49,9 @@ class Home extends Component {
         overview: eachMovie.overview,
         posterPath: eachMovie.poster_path,
       }))
+      const randomNumber = Math.floor(Math.random() * fetchedData.length)
 
-      const Random = Math.floor(Math.random() * fetchedData.length)
-
-      const randomMovie = fetchedData[Random]
+      const randomMovie = fetchedData[randomNumber]
       this.setState({
         randomHomePagePoster: randomMovie,
         apiStatus: apiStatusConstants.success,
@@ -67,7 +67,7 @@ class Home extends Component {
     this.getRandomHomePagePoster()
   }
 
-  renderFailureView = () => <FailureView onClickRetry={this.onClickRetry()} />
+  renderFailureView = () => <FailureView onClickRetry={this.onClickRetry} />
 
   renderLoadingView = () => <Loading />
 
@@ -76,7 +76,6 @@ class Home extends Component {
 
     const {title, backdropPath, overview} = randomHomePagePoster
     console.log(title)
-
     return (
       <div
         style={{backgroundImage: `url(${backdropPath})`}}

@@ -22,9 +22,9 @@
 }
 
 .movie-img {
-  margin: 0px 10px;
-  height: 80px;
-  width: 80px;
+  margin: 5px;
+  height: 126px;
+  width: 100px;
   border-radius: 10px;
 }
 
@@ -39,8 +39,8 @@
 @media (min-width: 768px) {
   .movie-img {
     margin: 0px 15px;
-    height: 120px;
-    width: 120px;
+    height: 170px;
+    width: 134px;
   }
 
   .movies-page {
@@ -51,7 +51,7 @@
 @media (min-width: 1024px) {
   .movie-img {
     margin: 0px 30px;
-    height: 200px;
+    height: 265px;
     width: 200px;
     border-radius: 10px;
   }

@@ -82,6 +82,8 @@ body {
   .home-page {
     height: 60vh;
     margin-bottom: 48px;
+    background-size: cover;
+    width: 100%;
   }
   .home-page-movie-container {
     padding-left: 165px;

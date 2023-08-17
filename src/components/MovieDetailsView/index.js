@@ -194,16 +194,17 @@ class MovieDetailsView extends Component {
               <p className="genre-name">{movieReleaseDate}</p>
             </div>
           </div>
-          <div className="similar-movies-container">
-            <h1 className="side-heading">More like this</h1>
-            <div className="similar-movies-list">
-              {similarMoviesList.map(eachMovie => (
-                <MovieDetailsLink movieDetails={eachMovie} key={eachMovie.id} />
-              ))}
-            </div>
-          </div>
-          <Footer />
         </div>
+
+        <div className="similar-movies-container">
+          <h1 className="side-heading">More like this</h1>
+          <div className="similar-movies-list">
+            {similarMoviesList.map(eachMovie => (
+              <MovieDetailsLink movieDetails={eachMovie} key={eachMovie.id} />
+            ))}
+          </div>
+        </div>
+        <Footer />
       </>
     )
   }

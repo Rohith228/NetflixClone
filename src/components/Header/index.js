@@ -79,7 +79,7 @@ class Header extends Component {
               )}
               <Link to="/search">
                 <button
-                  //   onClick={this.onSearch}
+                  onClick={this.onSearch}
                   type="button"
                   testid="searchButton"
                   className={searchBtn}

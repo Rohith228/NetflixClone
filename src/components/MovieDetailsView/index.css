@@ -4,7 +4,9 @@
 }
 @media screen and (min-width: 768px) {
   .movie-details-home-page {
-    min-height: 50vh;
+    min-height: 60vh;
+    background-size: cover;
+    width: 100%;
   }
 
   .home-page-container {
@@ -65,6 +67,9 @@
 
   .similar-movies-container {
     padding: 0px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
   }
 
   .side-heading {
@@ -177,7 +182,7 @@
 .movie-information {
   padding-left: 165px;
   padding-right: 135px;
-  background-color: black;
+  background-color: #131313;
 }
 
 .movie-details-container {
@@ -187,6 +192,7 @@
 }
 @media screen and (max-width: 768px) {
   .movie-details-container {
+    display: flex;
     flex-direction: column;
   }
 }
@@ -220,17 +226,21 @@
 
 .similar-movies-container {
   padding-right: 19px;
-  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #131313;
 }
 
 .side-heading {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 26px;
   color: #ffffff;
   margin-bottom: 16px;
+  margin-right: 10px;
 }
 
 .similar-movies-list {
@@ -240,4 +250,6 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 15px;
 }

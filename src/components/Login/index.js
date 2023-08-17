@@ -65,7 +65,7 @@ class Login extends Component {
     return (
       <>
         <label className="input-label" htmlFor="username">
-          USERNAME
+          USERNAME:rahul
         </label>
         <input
           onChange={this.onChangeUserName}
@@ -73,7 +73,7 @@ class Login extends Component {
           className="input-field"
           type="text"
           id="username"
-          placeholder="rahul"
+          placeholder="Username"
         />
       </>
     )
@@ -85,7 +85,7 @@ class Login extends Component {
     return (
       <>
         <label className="input-label" htmlFor="password">
-          PASSWORD
+          PASSWORD:rahul@2021
         </label>
         <input
           onChange={this.onChangePassword}
@@ -109,11 +109,6 @@ class Login extends Component {
     return (
       <>
         <div className="login-container">
-          <img
-            className="website-logo"
-            alt="login website logo"
-            src="https://res.cloudinary.com/ddry7fpzp/image/upload/v1662296727/Movies_Logo_vr3wvf.png"
-          />
           <form className="login-form-container" onSubmit={this.onSubmitForm}>
             <h1 className="heading-login">Login</h1>
             <div className="input-container">{this.renderUsername()}</div>

@@ -2,6 +2,9 @@
   padding-left: 32px;
   padding-right: 19px;
   min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .bg-color {
   background-color: black;
